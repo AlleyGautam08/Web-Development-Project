@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <h2>Registration Form</h2>
+<p>Here you fill your all entry!.</p>
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fullname">Full Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fullname" name="fullname" placeholder="Your name.." required>
+      </div>
+    </div>
+    <div class="row">
+     <div class="col-25">
+       <label for="email">Email</label>
+     </div>
+     <div class="col-75">
+       <input type="text" id="email" name="Email" placeholder="name@gamil.com" required>
+     </div>
+   </div>
+   <div class="row">
+     <div class="col-25">
+       <label for="phonenumber">Phone Number</label>
+     </div>
+     <div class="col-75">
+       <input type="text" id="phonenumber" name="phonenumber" placeholder="enter phone number.." required>
+     </div>
+   </div>
+   <div class="row">
+     <div class="col-25">
+       <label for="password">Password</label>
+     </div>
+     <div class="col-75">
+       <input type="text" id="password" name="password" placeholder="enter confirm password.." required>
+     </div>
+   </div>
+   
+     
+   <div class="row">
+     <div class="col-25">
+       <label for="subject">Subject</label>
+     </div>
+     <div class="col-75">
+       <textarea id="subject" name="subject" placeholder="tell me about yourself.." style="height:200px" required></textarea>
+     </div>
+   </div>
+   <div class="row">
+     <input type="submit" value="Submit">
+   </div>
+ </form>
+</div>
+</body>
+</html>
