@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Random Password Generator App</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="inputbox">
+          <h2>Random Password Generator App</h2>
+          <input type="text" placeholder="creat password" id="password">
+          <div id="btn" onclick="getPassword()">Generate Password</div>
+     </div>
+     <script type="text/javascript"> 
+          function getPassword() {
+               var chars = "0123456789abnmmhgrdfxfccghvhbjnjnjbjbbbbbABCDEFGHIJKLMNOPQSRTUVWCG!@#$%%^()|||*&^%???{{}}[]";
+               var passwordLength = 16;
+               var password = "";
+               for(var i=0; i<passwordLength; i++){
+                    var RandomNumber = math.floor(math.random() * chars.length); 
+                    password += chars.substring(RandomNumber,RandomNumber+1);
+               }
+          }
+          document.getElementById("password").value = password
+     </script>
+</body>
+</html>
